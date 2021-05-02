@@ -3,7 +3,6 @@
 <%= link_to '新規投稿', new_item_path %>
 <div class="content">
   <% @items.each do |item| %> 
-<%# eachメソッドを使うことで、全商品に対して以下の処理を実行します %>
     <p>タイトル：<%= item.title %></p>
     <p>本文：<%= item.text %></p>
   <% end %>
